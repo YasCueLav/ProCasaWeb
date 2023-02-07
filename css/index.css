@@ -1,0 +1,378 @@
+body{
+  font-family: lato !important;
+}
+/*INICIO ESTILOS CARGANDO*/
+.loader-page {
+    position: fixed;
+    z-index: 25000;
+    background: rgb(255, 255, 255);
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all .3s ease;
+  }
+  .loader-page::before {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  }
+  .loader-page::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  }
+/*FIN ESTILOS CARGANDO*/
+
+.distan-txt-card{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.distan-section{
+	   padding-top:  5%;
+    padding-bottom:  5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.footer{
+  padding-top:  5%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #242424;
+  color: #8C8C8C;
+  font-size: small;
+}
+.txt-footer{
+  text-align: center;
+  margin-top: 3%;
+  padding-bottom: 1%;
+  font-size: x-small;
+  color: #575757 !important;
+}
+.txt-footer-derechos{
+  border-top: 1px solid #575757;
+  padding-top: 0.5%;
+}
+
+.distan-box-cards{
+	padding-top:  20px;
+    padding-bottom:  20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.distan-card{
+	 padding-top:  5px;
+    padding-bottom:  5px;
+    margin-top: auto;
+    margin-bottom: 2%;
+}
+.img-header{
+    position: relative; 
+    display: inline-block; 
+    text-align: center;
+}
+.txt-img-centrado{
+    position: absolute; 
+    top: 20% ; 
+    left: 5% ;
+    max-width: 700px;
+}
+.txt-img-promo{
+    position: absolute; 
+    top: 5%;
+    color: #FFF; 
+    background-color: #FF0000 !important;
+    width: 250px;
+
+    border-radius: 0px 25px 25px 0px;
+    -moz-border-radius: 0px 25px 25px 0px;
+    -webkit-border-radius: 0px 25px 25px 0px;
+    border: 0px solid #000000;
+}
+
+.carousel-item-icon {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  margin-right: 10%;
+  margin-left: 10%;
+  list-style: none;
+}
+
+.carousel-item-icon a {
+    color:#FF0000;
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: 0.7; /*0.5*/
+    background-color: #fff;
+
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 1px solid #FF0000;
+
+    font-weight: 700;
+}
+.carousel-item-icon a:hover  {
+    color:#FF0000;
+    opacity: 1;
+}
+.carousel-item-icon > a > i , .carousel-item-icon > a > span {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-item-icon a {
+    transition: none;
+  }
+}
+
+@media (max-width: 490px){
+    .carousel-item-icon > a > span {
+        display: none;
+      }
+      .carousel-item-icon a  {
+        border: 0px solid #fff;
+      }
+}
+
+/* GALERIA IMG*/
+.galeria{
+    margin-top: 5%;
+}
+
+@media (min-width: 200px) {
+    .galeria{
+        width:70%;
+    }
+}
+@media (min-width: 500px) {
+    .galeria{
+        width:70%;
+    }
+}
+
+@media (min-width: 440px) {
+    .txt-img-centrado{
+        top: 25% ; 
+        left: 15% ;
+    }
+}
+@media (min-width: 500px) {
+    .txt-img-centrado{
+        top: 28% ; 
+        left: 18% ;
+    }
+}
+@media (min-width: 576px) {
+    .txt-img-centrado{
+        top: 33% ; 
+        left: 25% ;
+    }
+    .galeria{
+        width:70%;
+    }
+}
+
+@media (min-width: 768px) { 
+    .txt-img-centrado{
+        top: 35% ; 
+        left: 33% ;
+    }
+    .galeria{
+        width:100%;
+    }
+}
+
+@media (min-width: 992px) {  
+    .txt-img-centrado{
+        top: 40% ; 
+        left: 37% ;
+    }
+    .galeria{
+        width:100%;
+    }
+ }
+
+@media (min-width: 993px) {  
+    .txt-img-centrado{
+        top: 40% ; 
+        left: 37% ;
+    }
+    .galeria{
+        width:100%;
+    }
+ }
+
+
+/*MENU*/
+.tam-logo{
+    max-width: 180px;
+}
+.menu-style{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: center;
+}
+
+.link-footer{
+  color: #B3B3B3!important;
+  font-size: 18px;
+}
+.link-footer:hover{
+  color: #FF1919!important;
+}
+
+.sin-margenes-menu{
+    padding:0px;
+    margin: 0px;
+}
+
+.vertical-aling{
+    max-height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.video-style{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+/*WHATSAPP*/
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:3%;
+  left: 3%;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
+
+
+.card-empresa {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #F2F2F2;
+  background-clip: border-box;
+  border: 1px solid #E6E6E6;
+  border-radius: 0.25rem;
+  margin-top:2%;
+}
+
+.card-empresa > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card-empresa > .list-group:first-child .list-group-item:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.card-empresa > .list-group:last-child .list-group-item:last-child {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.bordes-rojos{
+  border: 1px solid #FF0000;
+  border-radius: 0.25rem;
+  padding: 5%;
+}
+
+.margenes-notas{
+  margin-right: 15%;
+  margin-left: 15%;
+}
+.margenes-notas > p{
+  text-align: left;
+}
+.margenes-notas > h2{
+  text-align: center;
+  margin: 3%;
+}
+
+.txt-contacto{
+  margin-left: 2%;
+}
+
+.btnMP{
+  margin-top: 2%;
+  font-size: large;
+  transition: transform .2s;
+}
+.btnMP:hover{
+  margin: 5%;
+  transform: scale(1.3);
+}
+.img-MP{
+  max-width: 230px;
+}
+/* IMG MP*/
+@media (min-width: 200px) {
+    .img-MP{
+        width:70%;
+    }
+}
+@media (min-width: 500px) {
+    .img-MP{
+        width:80%;
+    }
+}
+@media (min-width: 576px) {
+    .img-MP{
+        width:80%;
+    }
+}
+
+@media (min-width: 768px) { 
+    .img-MP{
+        width:100%;
+    }
+}
+
+@media (min-width: 992px) {  
+    .img-MP{
+        width:100%;
+    }
+ }
+
+ .precio{
+  border: 1px solid #FF0000;
+  border-radius: 0.25rem;
+  padding-top: 8px;
+ }
